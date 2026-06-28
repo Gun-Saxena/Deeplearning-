@@ -1,0 +1,8 @@
+package engineering_concepts.design_pattern.DepencencyInjection;
+
+public class CustomerRepositoryImpl implements CustomerRepository{
+    @Override 
+    public String findCustomerById(int id){ 
+        return "Customer ID:"+id; 
+    } 
+}
