@@ -7,6 +7,6 @@ public class WebApp implements Observer{
     }
     @Override
     public void update(String sn,double p){
-        System.out.println(u+"(Web App) received update:"+sn+"=Rs"+p);
+        System.out.println(u+" received update:"+sn+"=Rs"+p);
     }
 }
