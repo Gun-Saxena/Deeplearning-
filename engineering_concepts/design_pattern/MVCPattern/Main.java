@@ -8,7 +8,6 @@ public class Main{
         c.updateView(); 
         c.setStudentName("XYZ"); 
         c.setStudentGrade("A+"); 
-        System.out.println(); 
         c.updateView(); 
     } 
 }
