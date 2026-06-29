@@ -22,8 +22,8 @@ public class StockMarket implements Stock{
     public void setStockPrice(String sn,double p){
         this.sn=sn;
         this.p=p;
-        System.out.println("\nStock Price Updated:");
+        System.out.println("Stock Price Updated:");
         System.out.println(sn+"=Rs"+p);
-        notify();
+        notifyObservers();
     }
 }
