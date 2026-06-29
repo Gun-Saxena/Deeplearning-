@@ -5,11 +5,9 @@ public class Main{
         System.out.println("Email Notification:");
         Notifier e=new EmailNotifier();
         e.send();
-        System.out.println();
         System.out.println("Email+SMS Notification:");
         Notifier sms=new SMSNotifierDecorator(new EmailNotifier());
         sms.send();
-        System.out.println();
         System.out.println("Email+SMS+Slack Notification:");
         Notifier ob=new SlackNotifierDecorator(new SMSNotifierDecorator(new EmailNotifier()));
         ob.send();
