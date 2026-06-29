@@ -1,25 +1,25 @@
 public class Computer{
     private String cpu;
     private int ram;
-    private int storage;
-    private String graphicsCard;
+    private int store;
+    private String gCard;
     private Computer(Builder b) {
         this.cpu=b.cpu;
         this.ram=b.ram;
-        this.storage=b.storage;
-        this.graphicsCard=b.graphicsCard;
+        this.store=b.store;
+        this.gCard=b.gCard;
     }
     public void display() {
         System.out.println("CPU :"+cpu);
         System.out.println("RAM :"+ram+ " GB");
-        System.out.println("Storage:"+storage+" GB");
-        System.out.println("Graphics Card:"+graphicsCard);
+        System.out.println("Storage:"+store+" GB");
+        System.out.println("Graphics Card:"+gCard);
     }
     public static class Builder{
         private String cpu;
         private int ram;
-        private int storage;
-        private String graphicsCard;
+        private int store;
+        private String gCard;
         public Builder setCPU(String cpu){
             this.cpu=cpu;
             return this;
@@ -28,12 +28,12 @@ public class Computer{
             this.ram=ram;
             return this;
         }
-        public Builder setStorage(int storage) {
-            this.storage=storage;
+        public Builder setStorage(int store) {
+            this.store=store;
             return this;
         }
-        public Builder setGraphicsCard(String graphicsCard) {
-            this.graphicsCard=graphicsCard;
+        public Builder setGraphicsCard(String gCard) {
+            this.gCard=gCard;
             return this;
         }
         public Computer build(){
